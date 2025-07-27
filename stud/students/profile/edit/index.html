@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактировать профиль</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="topnav-center">
+            <button class="nav-btn" onclick="window.location.href='../../index.html'">Главный экран</button>
+            <button class="nav-btn" onclick="window.location.href='../../index.html'">Курсы</button>
+        </div>
+        <div class="profile-mini">
+            <img src="../profile.jpg" alt="Аватар" class="profile-avatar">
+            <span class="profile-name">Иван Иванов</span>
+        </div>
+    </div>
+    <main class="profile-main">
+        <form class="edit-form" id="editForm">
+            <h2>Редактировать профиль</h2>
+            <label>Имя
+                <input type="text" id="editName" value="Иван" required>
+            </label>
+            <label>Фамилия
+                <input type="text" id="editSurname" value="Иванов" required>
+            </label>
+            <label>Email
+                <input type="email" id="editEmail" value="student@email.com" required>
+            </label>
+            <label>Пароль
+                <input type="password" id="editPassword" placeholder="Новый пароль">
+            </label>
+            <label>Подтверждение пароля
+                <input type="password" id="editPassword2" placeholder="Повторите пароль">
+            </label>
+            <button class="nav-btn" type="submit">Сохранить</button>
+        </form>
+    </main>
+    <footer>© 2025 Учебная платформа</footer>
+    <script src="script.js"></script>
+</body>
+</html> 

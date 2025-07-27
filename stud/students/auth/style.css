@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #e3edfa;
+    color: #174ea6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.auth-main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(23,78,166,0.10);
+    padding: 36px 32px 28px 32px;
+    min-width: 320px;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.auth-tabs {
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+    gap: 0;
+}
+.auth-tab {
+    flex: 1 1 0;
+    background: #e3edfa;
+    color: #174ea6;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 12px 0;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    outline: none;
+}
+.auth-tab.active, .auth-tab:focus {
+    background: #174ea6;
+    color: #fff;
+}
+.auth-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.auth-form label {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #b3d1f7;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #fff;
+    color: #174ea6;
+    outline: none;
+    transition: border 0.2s;
+}
+.auth-form input:focus {
+    border: 1.5px solid #174ea6;
+}
+.auth-form button {
+    background: #174ea6;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+    font-family: inherit;
+}
+.auth-form button:disabled {
+    background: #b3d1f7;
+    color: #fff;
+    cursor: default;
+}
+.auth-form button:hover:not(:disabled), .auth-form button:focus:not(:disabled) {
+    background: #0d307a;
+}
+.consent-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.98rem;
+    margin-top: 4px;
+    user-select: none;
+    flex-direction: row;
+}
+.auth-form input[type="checkbox"] {
+    accent-color: #174ea6;
+    width: 18px;
+    height: 18px;
+    margin: 0 8px 0 0;
+}
+footer {
+    height: 48px;
+    background: #174ea6;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    margin-top: 32px;
+}
+@media (max-width: 600px) {
+    .auth-card {
+        min-width: 90vw;
+        padding: 18px 4px 18px 4px;
+    }
+} 

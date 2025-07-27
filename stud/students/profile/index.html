@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль студента</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="topnav-center">
+            <button class="nav-btn" onclick="window.location.href='../index.html'">Главный экран</button>
+            <button class="nav-btn" onclick="window.location.href='../index.html'">Курсы</button>
+        </div>
+        <div class="profile-mini">
+            <img src="../profile.jpg" alt="Аватар" class="profile-avatar">
+            <span class="profile-name">Иван Иванов</span>
+        </div>
+    </div>
+    <main class="profile-main">
+        <div class="profile-card">
+            <img src="../profile.jpg" alt="Аватар" class="profile-avatar-large">
+            <div class="profile-info">
+                <div class="profile-fio">Иван Иванов</div>
+                <div class="profile-email">student@email.com</div>
+            </div>
+            <div class="profile-progress-list">
+                <div>Верстка: <span>80%</span></div>
+                <div>JavaScript: <span>60%</span></div>
+                <div>PHP: <span>40%</span></div>
+                <div>Python: <span>20%</span></div>
+                <div>React: <span>0%</span></div>
+            </div>
+            <div class="profile-actions">
+                <button class="nav-btn" id="editProfileBtn">Редактировать профиль</button>
+                <button class="nav-btn" id="logoutBtn">Выйти</button>
+            </div>
+        </div>
+    </main>
+    <footer>© 2025 Учебная платформа</footer>
+    <script src="script.js"></script>
+</body>
+</html> 

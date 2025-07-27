@@ -1,0 +1,35 @@
+<!-- Для реального проекта здесь можно подключить серверные API и модальные окна для редактирования -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель администратора</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="admin-container">
+    <div class="admin-header">
+        <div class="admin-title">Панель администратора</div>
+        <button class="admin-logout">Выйти</button>
+    </div>
+    <div class="admin-content">
+        <div id="students-panel">
+            <div class="admin-form-row">
+                <input id="student-search" class="admin-input" type="text" placeholder="Поиск по студентам...">
+                <button id="student-search-btn" class="admin-search-btn" title="Поиск"><span>🔍</span></button>
+                <button id="student-filter-btn" class="admin-filter-btn" title="Фильтр"><span>⚙️ Фильтр</span></button>
+                <div id="student-filter-menu" class="admin-filter-menu">
+                    <label><input type="checkbox" id="filter-online"> Только онлайн</label>
+                    <label><input type="checkbox" id="filter-offline"> Только оффлайн</label>
+                    <label><input type="checkbox" id="filter-has-progress"> Есть прогресс</label>
+                    <label><input type="checkbox" id="filter-no-progress"> Нет прогресса</label>
+                    <label><input type="checkbox" id="filter-finished"> Завершили все курсы</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="admin.js"></script>
+</body>
+</html> 

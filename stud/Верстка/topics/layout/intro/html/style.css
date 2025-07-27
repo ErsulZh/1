@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff;
+    color: #174ea6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+    height: 48px;
+    background: #174ea6;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+footer {
+    flex-shrink: 0;
+}
+.main-container {
+    display: flex;
+    flex: 1 0 auto;
+    min-height: 0;
+    height: calc(100vh - 96px);
+}
+.sidebar {
+    width: 200px;
+    background: #e3edfa;
+    padding: 24px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #b3d1f7;
+}
+.sidebar-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.sidebar-topic {
+    padding: 12px 24px;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: background 0.2s, border-color 0.2s;
+}
+.sidebar-topic.active, .sidebar-topic:hover {
+    background: #174ea6;
+    color: #fff;
+    border-left: 3px solid #174ea6;
+}
+.content-area {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 100%;
+}
+.topic-content {
+    flex: 1 1 0;
+    overflow-y: auto;
+    padding: 32px 32px 64px 32px;
+    font-size: 1.1rem;
+    background: #fff;
+    color: #174ea6;
+    min-height: 0;
+}
+.topic-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 32px 18px 32px;
+    background: #fff;
+    border-top: 1px solid #b3d1f7;
+}
+/* Удаляю или переопределяю старый стиль для .topic-nav button */
+.topic-nav button {
+    all: unset;
+}
+.topic-arrow {
+    background: #174ea6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 64px;
+    height: 64px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(23,78,166,0.12);
+    transition: background 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+.topic-arrow:active {
+    background: #0d307a;
+}
+.topic-arrow:disabled, .topic-arrow[hidden] {
+    display: none;
+}
+@media (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        border-right: none;
+        border-bottom: 1px solid #b3d1f7;
+        padding: 0;
+        height: 48px;
+        align-items: center;
+    }
+    .sidebar-title {
+        display: none;
+    }
+    .sidebar-topic {
+        flex: 1 1 0;
+        padding: 0 8px;
+        text-align: center;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+    }
+    .sidebar-topic.active, .sidebar-topic:hover {
+        border-left: none;
+        border-bottom: 3px solid #174ea6;
+    }
+    .content-area {
+        padding: 0;
+    }
+    .topic-content {
+        padding: 12px 4px 48px 4px;
+    }
+    .topic-nav {
+        padding: 8px 4px;
+    }
+    .topic-arrow {
+        width: 48px;
+        height: 48px;
+        font-size: 2rem;
+    }
+} 

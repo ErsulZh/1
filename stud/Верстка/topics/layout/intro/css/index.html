@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы CSS — Учебник для новичков</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .topic-arrow {
+            background: #174ea6;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s;
+            box-shadow: 0 2px 8px rgba(23,78,166,0.08);
+        }
+        .topic-arrow:disabled, .topic-arrow[hidden] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>Учебная платформа</header>
+    <main class="main-container">
+        <div class="sidebar">
+            <div class="sidebar-title">Темы</div>
+            <div class="sidebar-topic" data-link="../index.html">Основы HTML</div>
+            <div class="sidebar-topic active">Основы CSS</div>
+            <div class="sidebar-topic" data-link="../selectors/index.html">Селекторы</div>
+            <div class="sidebar-topic" data-link="../style/index.html">Оформление</div>
+            <div class="sidebar-topic" data-link="../boxmodel/index.html">Блочная модель</div>
+            <div class="sidebar-topic" data-link="../position/index.html">Позиционирование</div>
+            <div class="sidebar-topic" data-link="../floats/index.html">Флоаты</div>
+            <div class="sidebar-topic" data-link="../flex/index.html">Флексы</div>
+            <div class="sidebar-topic" data-link="../grid/index.html">Гриды</div>
+            <div class="sidebar-topic" data-link="../layouts/index.html">Макеты</div>
+        </div>
+        <div class="content-area">
+            <div class="topic-content" id="topicContent">
+                <h1>Основы CSS</h1>
+                <div id="textBlock1">
+                    <h2>Введение в CSS</h2>
+                    <p>CSS — это язык стилей для оформления веб-страниц. Он позволяет задавать цвета, шрифты, отступы и многое другое.</p>
+                </div>
+                <div id="textBlock2" style="display:none;">
+                    <h2>Пример CSS</h2>
+                    <pre>body {
+  background: #fff;
+  color: #222;
+}
+h1 {
+  color: #174ea6;
+}</pre>
+                </div>
+                <div id="textBlock3" style="display:none;">
+                    <h2>Задание</h2>
+                    <p>Добавьте CSS-стили к вашей HTML-странице: измените цвет текста, задайте фон и поэкспериментируйте с отступами.</p>
+                </div>
+            </div>
+            <div class="topic-nav">
+                <button id="prevBtn" class="topic-arrow" style="margin-right: 12px;" hidden>&larr;</button>
+                <button id="nextBtn" class="topic-arrow" style="margin-left: auto;">&rarr;</button>
+            </div>
+        </div>
+    </main>
+    <footer>© 2025 Учебная платформа</footer>
+    <script src="../script.js"></script>
+</body>
+</html> 

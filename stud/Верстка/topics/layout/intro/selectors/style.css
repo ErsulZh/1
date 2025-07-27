@@ -1,0 +1,30 @@
+.topic-arrow {
+    background: #174ea6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 64px;
+    height: 64px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(23,78,166,0.12);
+    transition: background 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+.topic-arrow:active {
+    background: #0d307a;
+}
+.topic-arrow:disabled, .topic-arrow[hidden] {
+    display: none;
+}
+@media (max-width: 800px) {
+    .topic-arrow {
+        width: 48px;
+        height: 48px;
+        font-size: 2rem;
+    }
+} 

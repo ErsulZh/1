@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff;
+    color: #174ea6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.topnav {
+    width: 100%;
+    background: #174ea6;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+.topnav-center {
+    display: flex;
+    gap: 12px;
+    margin: 0 auto;
+}
+.nav-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: inherit;
+}
+.nav-btn:hover, .nav-btn:focus {
+    background: #0d307a;
+    outline: none;
+}
+.profile-mini {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 0 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.profile-mini:hover, .profile-mini:focus {
+    background: #0d307a;
+}
+.profile-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #b3d1f7;
+}
+.profile-name {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+.profile-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 1 0;
+    padding: 48px 0 32px 0;
+    background: #fff;
+}
+.edit-form {
+    background: #e3edfa;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(23,78,166,0.06);
+    padding: 32px 32px 24px 32px;
+    min-width: 320px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.edit-form h2 {
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.edit-form label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+.edit-form input {
+    margin-top: 4px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #b3d1f7;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #fff;
+    color: #174ea6;
+    outline: none;
+    transition: border 0.2s;
+}
+.edit-form input:focus {
+    border: 1.5px solid #174ea6;
+}
+.edit-form button {
+    background: #174ea6;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+.edit-form button:hover, .edit-form button:focus {
+    background: #0d307a;
+}
+footer {
+    height: 48px;
+    background: #174ea6;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+@media (max-width: 600px) {
+    .edit-form {
+        min-width: 90vw;
+        padding: 18px 4px 18px 4px;
+    }
+    .profile-main {
+        padding: 18px 0 18px 0;
+    }
+    .topnav {
+        padding: 0 4px;
+    }
+    .nav-btn {
+        padding: 6px 8px;
+        font-size: 0.95rem;
+    }
+} 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы HTML — Учебник для новичков</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .topic-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 32px 18px 32px;
+            background: #fff;
+            border-top: 1px solid #b3d1f7;
+        }
+        .topic-arrow {
+            background: #174ea6;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .topic-arrow:disabled, .topic-arrow[hidden] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>Учебная платформа</header>
+    <main class="main-container">
+        <div class="sidebar">
+            <div class="sidebar-title">Темы</div>
+            <div class="sidebar-topic active">Основы HTML</div>
+            <div class="sidebar-topic" data-link="css/index.html">Основы CSS</div>
+            <div class="sidebar-topic" data-link="selectors/index.html">Селекторы</div>
+            <div class="sidebar-topic" data-link="style/index.html">Оформление</div>
+            <div class="sidebar-topic" data-link="boxmodel/index.html">Блочная модель</div>
+            <div class="sidebar-topic" data-link="position/index.html">Позиционирование</div>
+            <div class="sidebar-topic" data-link="floats/index.html">Флоаты</div>
+            <div class="sidebar-topic" data-link="flex/index.html">Флексы</div>
+            <div class="sidebar-topic" data-link="grid/index.html">Гриды</div>
+            <div class="sidebar-topic" data-link="layouts/index.html">Макеты</div>
+        </div>
+        <div class="content-area">
+            <div class="topic-content" id="topicContent">
+                <h1>Основы HTML</h1>
+                <div id="textBlock1">
+                    <h2>Введение в HTML</h2>
+                    <p>HTML — это язык разметки для создания веб-страниц. Он определяет структуру документа с помощью тегов.</p>
+                </div>
+                <div id="textBlock2" style="display:none;">
+                    <h2>Пример HTML-документа</h2>
+                    <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Пример&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Заголовок&lt;/h1&gt;
+    &lt;p&gt;Текст абзаца&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+                </div>
+                <div id="textBlock3" style="display:none;">
+                    <h2>Задание</h2>
+                    <p>Создайте свою первую HTML-страницу с заголовком и абзацем. Попробуйте изменить текст и посмотреть результат в браузере.</p>
+                </div>
+            </div>
+            <div class="topic-nav">
+                <button id="prevBtn" class="topic-arrow" style="margin-right: 12px;" hidden>&larr;</button>
+                <button id="nextBtn" class="topic-arrow" style="margin-left: auto;">&rarr;</button>
+            </div>
+        </div>
+    </main>
+    <footer>© 2025 Учебная платформа</footer>
+    <script src="script.js"></script>
+</body>
+</html> 

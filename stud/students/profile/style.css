@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff;
+    color: #174ea6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.topnav {
+    width: 100%;
+    background: #174ea6;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+.topnav-center {
+    display: flex;
+    gap: 12px;
+    margin: 0 auto;
+}
+.nav-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: inherit;
+}
+.nav-btn:hover, .nav-btn:focus {
+    background: #0d307a;
+    outline: none;
+}
+.profile-mini {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 0 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.profile-mini:hover, .profile-mini:focus {
+    background: #0d307a;
+}
+.profile-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #b3d1f7;
+}
+.profile-name {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+.profile-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 1 0;
+    padding: 48px 0 32px 0;
+    background: #fff;
+}
+.profile-card {
+    background: #e3edfa;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(23,78,166,0.06);
+    padding: 32px 32px 24px 32px;
+    min-width: 320px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-avatar-large {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #b3d1f7;
+    margin-bottom: 18px;
+}
+.profile-info {
+    text-align: center;
+    margin-bottom: 18px;
+}
+.profile-fio {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.profile-email {
+    font-size: 1rem;
+    color: #174ea6;
+    opacity: 0.7;
+}
+.profile-progress-list {
+    width: 100%;
+    margin-top: 12px;
+}
+.profile-progress-list div {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+    display: flex;
+    justify-content: space-between;
+}
+.profile-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 18px;
+    justify-content: center;
+}
+.profile-actions .nav-btn {
+    background: #174ea6;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.profile-actions .nav-btn:hover, .profile-actions .nav-btn:focus {
+    background: #0d307a;
+}
+footer {
+    height: 48px;
+    background: #174ea6;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+@media (max-width: 600px) {
+    .profile-card {
+        min-width: 90vw;
+        padding: 18px 4px 18px 4px;
+    }
+    .profile-main {
+        padding: 18px 0 18px 0;
+    }
+    .topnav {
+        padding: 0 4px;
+    }
+    .nav-btn {
+        padding: 6px 8px;
+        font-size: 0.95rem;
+    }
+} 
